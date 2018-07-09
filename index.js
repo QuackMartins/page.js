@@ -200,7 +200,7 @@
       pageWindow.document.addEventListener(clickEvent, onclick, false);
     }
     hashbang = !!options.hashbang;
-    if(hashbang && hasWindow && !hasHistory) {
+    if((hashbang && hasWindow) && !hasHistory) {
       pageWindow.addEventListener('hashchange', onpopstate, false);
     }
     if (!dispatch) return;
